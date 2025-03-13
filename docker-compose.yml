@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  receipt-processor:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
